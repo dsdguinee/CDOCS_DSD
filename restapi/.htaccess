@@ -1,0 +1,10 @@
+RewriteEngine on
+RewriteRule .* - [E=HTTP_AUTHORIZATION:%{HTTP:Authorization}]
+
+<IfModule mod_header.c>
+<Files ~ "^swagger\.yaml">
+Header set Access-Control-Allow-Origin "*"
+Header set Access-Control-Allow-Methods "GET"
+Header set Access-Control-Allow-Headers "X-Requested-With, Content-Type, Accept, Origin, Authorization"
+</Files>
+</IfModule>

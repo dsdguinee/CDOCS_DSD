@@ -1,0 +1,20 @@
+{
+    "require": {
+        "robthree/twofactorauth": "^1.5",
+        "php-mime-mail-parser/php-mime-mail-parser": "^2.6",
+        "slim/slim": "^3.0",
+	"erusev/parsedown": "*",
+        "mibe/feedwriter": "^1.1",
+        "phpoffice/phpexcel": "^1.8",
+        "sabre/xml": "1.4.2",
+        "sabre/dav": "3.0.9",
+	"pear/log": "*",
+	"pear/mail": "*",
+	"pear/mail_mime": "*",
+	"pear/net_smtp": "*",
+	"pear/auth_sasl": "*",
+	"pear/db": "*",
+        "dragonmantank/cron-expression": "^2.0",
+	"alecrabbit/php-console-colour": "*"
+    }
+}
