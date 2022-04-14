@@ -423,3 +423,6 @@ ul.qq-upload-list li span {
   border-color: #ddd;
     }
 }
+.navbar-inverse .brand, .navbar-inverse .nav > li > a {
+    color: white!important;
+}

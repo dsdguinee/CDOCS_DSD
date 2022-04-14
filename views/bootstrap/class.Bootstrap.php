@@ -158,7 +158,7 @@ background-image: linear-gradient(to bottom, #882222, #111111);;
 	} /* }}} */
 
 	function htmlEndPage($nofooter=false) { /* {{{ */
-		if(!$nofooter) {
+		/* if(!$nofooter) {
 			$hookObjs = $this->getHookObjects('SeedDMS_View_Bootstrap');
 			$html = $this->footNote();
 			foreach($hookObjs as $hookObj) {
@@ -170,7 +170,7 @@ background-image: linear-gradient(to bottom, #882222, #111111);;
 			if($this->params['showmissingtranslations']) {
 				$this->missingLanguageKeys();
 			}
-		}
+		} */
 		echo '<script src="../styles/'.$this->theme.'/bootstrap/js/bootstrap.min.js"></script>'."\n";
 		echo '<script src="../views/'.$this->theme.'/vendors/bootstrap-datepicker/js/bootstrap-datepicker.js"></script>'."\n";
 		foreach(array('de', 'es', 'ar', 'el', 'bg', 'ru', 'hr', 'hu', 'ko', 'pl', 'ro', 'sk', 'tr', 'uk', 'ca', 'nl', 'fi', 'cs', 'it', 'fr', 'sv', 'sl', 'pt-BR', 'zh-CN', 'zh-TW') as $lang)
@@ -287,8 +287,8 @@ background-image: linear-gradient(to bottom, #882222, #111111);;
 	function globalBanner() { /* {{{ */
 		echo "<div class=\"navbar navbar-inverse navbar-fixed-top\">\n";
 		echo " <div class=\"navbar-inner\">\n";
-		echo "  <div class=\"container-fluid\">\n";
-		echo "   <a class=\"brand\" href=\"../out/out.ViewFolder.php?folderid=".$this->params['rootfolderid']."\">".(strlen($this->params['sitename'])>0 ? $this->params['sitename'] : "SeedDMS")."</a>\n";
+		echo "  <div class=\"container-fluid\" style=\"background-color: #fd9607;\">\n";
+		echo "   <a style=\"color: #f5f5f5;\" class=\"brand\" href=\"../out/out.ViewFolder.php?folderid=".$this->params['rootfolderid']."\">".(strlen($this->params['sitename'])>0 ? $this->params['sitename'] : "SeedDMS")."</a>\n";
 		echo "  </div>\n";
 		echo " </div>\n";
 		echo "</div>\n";
@@ -371,18 +371,18 @@ background-image: linear-gradient(to bottom, #882222, #111111);;
 		$accessobject = $this->params['accessobject'];
 		echo "<div class=\"navbar navbar-inverse navbar-fixed-top\">\n";
 		echo " <div class=\"navbar-inner\">\n";
-		echo "  <div class=\"container-fluid\">\n";
+		echo "  <div class=\"container-fluid\" style=\"background-color: #fd9607;\">\n";
 		echo "   <a class=\"btn btn-navbar\" data-toggle=\"collapse\" data-target=\".nav-col1\">\n";
 		echo "     <span class=\"fa fa-bar\"></span>\n";
 		echo "     <span class=\"fa fa-bar\"></span>\n";
 		echo "     <span class=\"fa fa-bar\"></span>\n";
 		echo "   </a>\n";
-		echo "   <a class=\"brand\" href=\"../out/out.ViewFolder.php?folderid=".$this->params['rootfolderid']."\">".(strlen($this->params['sitename'])>0 ? $this->params['sitename'] : "SeedDMS")."</a>\n";
+		echo "   <a  style=\"color: #f5f2f2;\" class=\"brand\" href=\"../out/out.ViewFolder.php?folderid=".$this->params['rootfolderid']."\">".(strlen($this->params['sitename'])>0 ? $this->params['sitename'] : "SeedDMS")."</a>\n";
 		if(isset($this->params['user']) && $this->params['user']) {
 			echo "   <div class=\"nav-collapse nav-col1\">\n";
 			echo "   <ul id=\"main-menu-admin\" class=\"nav pull-right\">\n";
 			echo "    <li class=\"dropdown\">\n";
-			echo "     <a href=\"#\" class=\"dropdown-toggle\" data-toggle=\"dropdown\">".($this->params['session']->getSu() ? getMLText("switched_to") : getMLText("signed_in_as"))." '".htmlspecialchars($this->params['user']->getFullName())."' <i class=\"fa fa-caret-down\"></i></a>\n";
+			echo "     <a  href=\"#\" class=\"dropdown-toggle\" data-toggle=\"dropdown\">".($this->params['session']->getSu() ? getMLText("switched_to") : getMLText("signed_in_as"))." '".htmlspecialchars($this->params['user']->getFullName())."' <i class=\"fa fa-caret-down\"></i></a>\n";
 			echo "     <ul class=\"dropdown-menu\" role=\"menu\">\n";
 //			if (!$this->params['user']->isGuest()) {
 				$menuitems = array();
