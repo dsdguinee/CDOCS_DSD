@@ -132,7 +132,7 @@ background-image: linear-gradient(to bottom, #882222, #111111);;
 </style>
 <?php
 		}
-		echo "<title>".(strlen($sitename)>0 ? $sitename : "SeedDMS").(strlen($title)>0 ? ": " : "").htmlspecialchars($title)."</title>\n";
+		echo "<title>".(strlen($sitename)>0 ? $sitename : "DSD Guinée").(strlen($title)>0 ? ": " : "").htmlspecialchars($title)."</title>\n";
 		echo "</head>\n";
 		echo "<body".(strlen($bodyClass)>0 ? " class=\"".$bodyClass."\"" : "").">\n";
 		if($this->params['session'] && $flashmsg = $this->params['session']->getSplashMsg()) {
