@@ -52,7 +52,7 @@
        - cacheDir: where the preview images are saved
        - backupDir: where the backups are saved
     -->
-    <server rootDir="C:/xampp/htdocs/seeddms/\" httpRoot="/seeddms/" contentDir="C:/xampp/htdocs/seeddms/data/\" stagingDir="C:/xampp/htdocs/seeddms/data/staging/\" luceneDir="C:/xampp/htdocs/seeddms/data/lucene/\" logFileEnable="true" logFileRotation="d" enableLargeFileUpload="false" partitionSize="2000000" cacheDir="C:/xampp/htdocs/seeddms/data/cache\" dropFolderDir="" backupDir="C:/xampp/htdocs/seeddms/data/backup/\" checkOutDir="" createCheckOutDir="true" repositoryUrl="" proxyUrl="" proxyUser="seeddms-user\" proxyPassword="123456\" maxUploadSize="" enableXsendfile="false">
+    <server rootDir="C:/xampp/htdocs/CDOCS_DSD/\" httpRoot="/CDOCS_DSD/" contentDir="C:/xampp/htdocs/CDOCS_DSD/data/\" stagingDir="C:/xampp/htdocs/CDOCS_DSD/data/staging/\" luceneDir="C:/xampp/htdocs/CDOCS_DSD/data/lucene/\" logFileEnable="true" logFileRotation="d" enableLargeFileUpload="false" partitionSize="2000000" cacheDir="C:/xampp/htdocs/CDOCS_DSD/data/cache\" dropFolderDir="" backupDir="C:/xampp/htdocs/CDOCS_DSD/data/backup/\" checkOutDir="" createCheckOutDir="true" repositoryUrl="" proxyUrl="" proxyUser="CDOCS_DSD-user\" proxyPassword="123456\" maxUploadSize="" enableXsendfile="false">
     </server>
     
     <!-- enableGuestLogin: If you want anybody to login as guest, set the following line to true
@@ -94,7 +94,7 @@
     <!--
        - dbDriver: DB-Driver used by adodb (see adodb-readme)
        - dbHostname: DB-Server
-       - dbDatabase: database where the tables for seeddms are stored (optional - see adodb-readme)
+       - dbDatabase: database where the tables for CDOCS_DSD are stored (optional - see adodb-readme)
        - dbUser: username for database-access
        - dbPass: password for database-access
     -->    
