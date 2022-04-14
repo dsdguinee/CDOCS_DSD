@@ -1,0 +1,22 @@
+Apr 12 14:11:15  [info] -- (::1) op.Login
+Apr 12 14:11:15  [error] -- (::1) op.Loginlogin failed
+Apr 12 14:12:38  [info] -- (::1) op.Login
+Apr 12 14:18:32  [info] admin (::1) op.SubstituteUser.php?userid=2&formtoken=42a45e542f155a50351b45325d4f683b?userid=2
+Apr 12 14:18:51  [error] guest (::1) out.UsrMgr UI::exitError error=Accès refusé. pagetitle=Outils d'administration
+Apr 12 14:19:39  [error] guest (::1) out.WorkflowMgr UI::exitError error=Accès refusé. pagetitle=Outils d'administration
+Apr 12 14:20:17  [info] guest (::1) op.ResetSu
+Apr 12 14:22:08  [info] admin (::1) op.RoleMgr.php&action=addrole&name=Secretaire
+Apr 12 14:23:07  [info] admin (::1) op.RoleMgr.php&action=editrole&roleid=4
+Apr 12 14:27:21  [info] admin (::1) op.UsrMgr.php&action=adduser&login=djenab
+Apr 12 14:30:38  [info] admin (::1) op.AddDocument?name=Directeur general&folderid=1
+Apr 12 14:31:12  [info] admin (::1) op.Ajax.php?command=deletedocument&id=1&formtoken=e51e95d7f5378b970bb2d9e9bc44556f
+Apr 12 14:32:37  [info] -- (::1) op.Login
+Apr 12 14:33:51  [info] -- (::1) op.Login
+Apr 12 14:37:03  [info] admin (::1) op.AddSubFolder?name=Comptabilite&folderid=1
+Apr 12 14:39:57  [error] admin (::1) op.AddDocument UI::exitError error=Jeton de demande incorrect pagetitle=Dossier 'Jeton de demande incorrect'
+Apr 12 14:40:36  [error] admin (::1) op.AddDocument UI::exitError error=Format de date d’expiration invalide pagetitle=Dossier 'Comptabilite'
+Apr 12 14:40:53  [error] admin (::1) op.AddDocument UI::exitError error=Chargement d'un fichier vide. Chargement annulé. pagetitle=Dossier 'Comptabilite'
+Apr 12 14:41:25  [info] admin (::1) op.AddDocument?name=courrier du ministere des finance&folderid=2
+Apr 12 14:42:10  [info] admin (::1) op.GroupMgr&action=addgroup&name=Comptabilite
+Apr 12 14:42:37  [info] admin (::1) op.GroupMgr?groupid=1&userid=3&action=addmember
+Apr 12 14:42:47  [info] admin (::1) op.GroupMgr?groupid=1&userid=2&action=addmember

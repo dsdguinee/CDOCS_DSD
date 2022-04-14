@@ -1,0 +1,16 @@
+l application de gestion des resources humain 
+dsd mobile module{
+module restauration 
+service de depannage
+l assurance 
+reservation des hotel
+sante
+ 
+l application de location de vehicule qui est priorité
+gestion des couriers 
+les deux projets de la cbg
+solution de delivrance des cassier judicier
+
+
+
+

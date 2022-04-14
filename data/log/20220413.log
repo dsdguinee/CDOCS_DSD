@@ -1,0 +1,45 @@
+Apr 13 04:56:59  [info] -- (127.0.0.1) op.Login
+Apr 13 05:47:49  [info] admin (127.0.0.1) op.GroupMgr&action=addgroup&name=reseau 1
+Apr 13 05:48:22  [info] admin (127.0.0.1) op.GroupMgr?groupid=1&userid=1&action=addmember
+Apr 13 05:48:39  [info] admin (127.0.0.1) op.GroupMgr?groupid=1&action=editgroup
+Apr 13 05:49:15  [info] admin (127.0.0.1) op.GroupMgr?groupid=1&action=editgroup
+Apr 13 05:50:04  [info] admin (127.0.0.1) op.GroupMgr&action=addgroup&name=reseau 1
+Apr 13 05:58:18  [info] admin (127.0.0.1) op.RoleMgr.php&action=addrole&name=Mariame
+Apr 13 06:47:59  [info] admin (127.0.0.1) op.UsrMgr.php&action=adduser&login=seeddms-user
+Apr 13 07:06:34  [error] admin (127.0.0.1) out.Hooks UI::exitError error=Accès refusé. pagetitle=Outils d'administration
+Apr 13 07:07:21  [info] admin (127.0.0.1) op.ClearCache
+Apr 13 07:27:25  [info] -- (127.0.0.1) op.Login
+Apr 13 08:24:17  [info] -- (127.0.0.1) op.Login
+Apr 13 08:56:12  [info] -- (127.0.0.1) op.Login
+Apr 13 08:57:13  [info] seeddms-user (127.0.0.1) op.AddSubFolder?name=Courriers&folderid=1
+Apr 13 08:58:46  [info] seeddms-user (127.0.0.1) op.AddSubFolder?name=Courriers arrivés&folderid=2
+Apr 13 09:00:41  [info] seeddms-user (127.0.0.1) op.AddSubFolder?name=courriers lus&folderid=2
+Apr 13 09:02:40  [info] seeddms-user (127.0.0.1) op.GroupMgr&action=addgroup&name=direction generale
+Apr 13 09:03:17  [info] seeddms-user (127.0.0.1) op.GroupMgr&action=addgroup&name=secretariat
+Apr 13 09:04:21  [info] seeddms-user (127.0.0.1) op.GroupMgr&action=addgroup&name=finance
+Apr 13 09:07:09  [info] seeddms-user (127.0.0.1) op.UsrMgr.php&action=adduser&login=dg
+Apr 13 09:09:17  [info] seeddms-user (127.0.0.1) op.UsrMgr.php&action=adduser&login=secretaire
+Apr 13 09:10:42  [info] seeddms-user (127.0.0.1) op.UsrMgr.php&action=adduser&login=comptable
+Apr 13 09:15:35  [info] seeddms-user (127.0.0.1) op.FolderAccess.php?formtoken=b957ee9755c51425b0b8fcea27b68a2d&action=setowner&folderid=2&ownerid=5
+Apr 13 09:17:55  [info] -- (192.168.1.111) op.Login
+Apr 13 09:19:07  [info] -- (192.168.1.112) op.Login
+Apr 13 09:19:54  [info] seeddms-user (127.0.0.1) op.FolderAccess.php?formtoken=b957ee9755c51425b0b8fcea27b68a2d&action=setowner&folderid=2&ownerid=5
+Apr 13 09:21:16  [info] seeddms-user (127.0.0.1) op.FolderAccess.php?formtoken=b957ee9755c51425b0b8fcea27b68a2d&folderid=2&action=notinherit&mode=copy
+Apr 13 09:21:26  [info] seeddms-user (127.0.0.1) op.FolderAccess.php?formtoken=b957ee9755c51425b0b8fcea27b68a2d&folderid=2&action=setdefault&mode=1
+Apr 13 09:21:29  [info] -- (192.168.1.103) op.Login
+Apr 13 09:22:01  [info] seeddms-user (127.0.0.1) op.FolderAccess.php?formtoken=b957ee9755c51425b0b8fcea27b68a2d&folderid=2&action=addaccess&userid=4&groupid=3&mode=2
+Apr 13 09:23:00  [info] -- (192.168.1.103) op.Login
+Apr 13 09:23:03  [info] -- (127.0.0.1) op.Login
+Apr 13 09:26:59  [info] seeddms-user (127.0.0.1) op.AddDocument?name=courrier 1&folderid=3
+Apr 13 09:28:16  [info] seeddms-user (127.0.0.1) op.Settings.php&action=savesettings
+Apr 13 09:29:28  [info] seeddms-user (127.0.0.1) op.Settings.php&action=savesettings
+Apr 13 09:31:31  [info] seeddms-user (127.0.0.1) op.WorkflowStatesMgr.php&action=addworkflowstate&name=Reçu
+Apr 13 09:32:44  [info] seeddms-user (127.0.0.1) op.WorkflowStatesMgr.php&action=addworkflowstate&name=Arrivé
+Apr 13 09:33:46  [info] seeddms-user (127.0.0.1) op.WorkflowStatesMgr.php&action=editworkflowstate&workflowstateid=1
+Apr 13 09:36:31  [info] seeddms-user (127.0.0.1) op.WorkflowActionsMgr.php&action=addworkflowaction&name=lecture
+Apr 13 09:38:02  [info] seeddms-user (127.0.0.1) op.WorkflowMgr.php&action=addworkflow&name=Reception Courrier
+Apr 13 09:38:49  [info] seeddms-user (127.0.0.1) op.AddTransitionToWorkflow?workflow=1&transition1
+Apr 13 09:41:11  [info] seeddms-user (127.0.0.1) op.WorkflowMgr.php&action=editworkflow&workflowid=1
+Apr 13 09:43:27  [info] seeddms-user (127.0.0.1) op.AddDocument?name=courrier 2&folderid=1
+Apr 13 09:44:13  [info] dg (192.168.1.112) op.Download.php?documentid=2&version=1
+Apr 13 09:45:25  [info] dg (192.168.1.112) op.TriggerWorkflow?documentid=2&version1
