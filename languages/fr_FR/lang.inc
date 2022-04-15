@@ -1038,7 +1038,7 @@ URL : [url]',
 'redraw' => 'Redessiner',
 'refresh' => 'Actualiser',
 'rejected' => 'Rejeté',
-'released' => 'Publié',
+'released' => 'Lu',
 'removed_approver' => 'a été retiré de la liste des approbateurs.',
 'removed_file_email' => 'Attachement supprimé',
 'removed_file_email_body' => 'Attachement supprimé

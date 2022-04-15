@@ -287,7 +287,7 @@ background-image: linear-gradient(to bottom, #882222, #111111);;
 	function globalBanner() { /* {{{ */
 		echo "<div class=\"navbar navbar-inverse navbar-fixed-top\">\n";
 		echo " <div class=\"navbar-inner\">\n";
-		echo "  <div class=\"container-fluid\" style=\"background-color: #fd9607;\">\n";
+		echo "  <div class=\"container-fluid\" style=\"background-color: #fb810e;\">\n";
 		echo "   <a style=\"color: #f5f5f5;\" class=\"brand\" href=\"../out/out.ViewFolder.php?folderid=".$this->params['rootfolderid']."\">".(strlen($this->params['sitename'])>0 ? $this->params['sitename'] : "SeedDMS")."</a>\n";
 		echo "  </div>\n";
 		echo " </div>\n";
@@ -371,7 +371,7 @@ background-image: linear-gradient(to bottom, #882222, #111111);;
 		$accessobject = $this->params['accessobject'];
 		echo "<div class=\"navbar navbar-inverse navbar-fixed-top\">\n";
 		echo " <div class=\"navbar-inner\">\n";
-		echo "  <div class=\"container-fluid\" style=\"background-color: #fd9607;\">\n";
+		echo "  <div class=\"container-fluid\" style=\"background-color: #fb810e;\">\n";
 		echo "   <a class=\"btn btn-navbar\" data-toggle=\"collapse\" data-target=\".nav-col1\">\n";
 		echo "     <span class=\"fa fa-bar\"></span>\n";
 		echo "     <span class=\"fa fa-bar\"></span>\n";
