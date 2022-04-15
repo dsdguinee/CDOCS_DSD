@@ -116,15 +116,17 @@ $(document).ready( function() {
 		$this->htmlStartPage(getMLText("sign_in"), "login");
 		$this->globalBanner();
 		$this->contentStart();
-		echo "<div class=\"text-center\">";
-		$this->pageNavigation(getMLText("sign_in"));
-		echo "</div>";
+		
 		if($msg)
 			$this->errorMsg(htmlspecialchars($msg));
 ?>
 <?php $this->contentContainerStart(); ?>
-<form class="form-horizontal" style="display:flex;flex-direction:column;justify-content:center; flex-wrap: wrap;align-content: center;" action="../op/op.Login.php" method="post" name="form1" id="form">
+<form class="form-horizontal" action="../op/op.Login.php" method="post" name="form1" id="form">
+	
 <?php
+		echo "<div class=\"text-center\">";
+		$this->pageNavigation(getMLText("sign_in"));
+		echo "</div>";
 		if ($refer) {
 			echo "<input type='hidden' name='referuri' value='".sanitizeString($refer)."'/>";
 		}

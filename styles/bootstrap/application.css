@@ -426,3 +426,14 @@ ul.qq-upload-list li span {
 .navbar-inverse .brand, .navbar-inverse .nav > li > a {
     color: white!important;
 }
+.loginpage
+{
+	display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+    align-items: center; 
+	margin-top: 57px;
+	
+}
