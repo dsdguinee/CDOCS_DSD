@@ -137,7 +137,7 @@ $(document).ready( function() {
 				'type'=>'text',
 				'id'=>'login',
 				'name'=>'login',
-				'placeholder'=>'login',
+				'placeholder'=>'Votre Nom d\'Utilisateur',
 				'autocomplete'=>'off',
 				'required'=>true
 			)
@@ -149,6 +149,7 @@ $(document).ready( function() {
 				'type'=>'password',
 				'id'=>'pwd',
 				'name'=>'pwd',
+				'placeholder'=>'Votre Mot de Pass',
 				'autocomplete'=>'off',
 				'required'=>true
 			)
@@ -169,7 +170,7 @@ $(document).ready( function() {
 		}
 		if($enableLanguageSelector) {
 			$html = "<select id=\"languageselector\" name=\"lang\">";
-			$html .= "<option value=\"\">-";
+			$html .= "<option value=\"\">Choisir une Langue";
 			foreach ($languages as $currLang) {
 				$html .= "<option value=\"".$currLang."\">".getMLText($currLang)."</option>";
 			}

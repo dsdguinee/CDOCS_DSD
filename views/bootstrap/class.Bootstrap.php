@@ -276,7 +276,7 @@ background-image: linear-gradient(to bottom, #882222, #111111);;
 
 	function contentStart() { /* {{{ */
 		echo "<div class=\"container-fluid\">\n";
-		echo " <div class=\"row-fluid loginPage\">\n";
+		echo " <div class=\"row-fluid loginpage\">\n";
 	} /* }}} */
 
 	function contentEnd() { /* {{{ */
