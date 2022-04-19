@@ -121,7 +121,7 @@ $(document).ready( function() {
 			$this->errorMsg(htmlspecialchars($msg));
 ?>
 <?php $this->contentContainerStart(); ?>
-<form class="form-horizontal" action="../op/op.Login.php" method="post" name="form1" id="form">
+<form class="form-horizontal frm_login" action="../op/op.Login.php" method="post" name="form1" id="form">
 	
 <?php
 		echo "<div class=\"text-center\">";

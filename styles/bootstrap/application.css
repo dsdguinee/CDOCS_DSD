@@ -437,3 +437,12 @@ ul.qq-upload-list li span {
 	margin-top: 57px;
 
 }
+.page_login
+{
+	background-image: url(../dsdimage.png);
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size:contain;
+	height: 100%;
+}
+
