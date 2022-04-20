@@ -19,6 +19,7 @@
 
 if(!isset($settings))
 	require_once("../inc/inc.Settings.php");
+
 require_once("inc/inc.LogInit.php");
 require_once("inc/inc.Language.php");
 require_once("inc/inc.Init.php");

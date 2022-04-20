@@ -1,1 +1,41 @@
 Apr 19 11:28:55  [info] -- (::1) op.Login
+Apr 19 17:40:01  [info] -- (::1) op.Login
+Apr 19 17:40:38  [info] admin (::1) op.AddSubFolder?name=Secretaire&folderid=1
+Apr 19 17:41:29  [error] admin (::1) op.WorkflowMgr UI::exitError error=Une erreur s'est produite pagetitle=Outils d'administration
+Apr 19 17:41:39  [error] admin (::1) op.WorkflowMgr UI::exitError error=Une erreur s'est produite pagetitle=Outils d'administration
+Apr 19 17:41:56  [error] admin (::1) op.WorkflowMgr UI::exitError error=Une erreur s'est produite pagetitle=Outils d'administration
+Apr 19 17:43:04  [info] admin (::1) op.WorkflowStatesMgr.php&action=addworkflowstate&name=Lecture
+Apr 19 17:43:28  [info] admin (::1) op.RemoveWorkflowState.php?workflowstateid=1&formtoken=9fbffc567a5d90d1a6484d6c0a15eb11?workflowstateid=1
+Apr 19 17:43:36  [info] admin (::1) op.WorkflowStatesMgr.php&action=addworkflowstate&name=Lecture
+Apr 19 17:43:53  [info] admin (::1) op.WorkflowStatesMgr.php&action=editworkflowstate&workflowstateid=2
+Apr 19 17:44:14  [info] admin (::1) op.WorkflowActionsMgr.php&action=addworkflowaction&name=Secretariat
+Apr 19 17:44:20  [info] admin (::1) op.RemoveWorkflowAction.php?workflowactionid=1&formtoken=1f9fa01a1ae73e12619a0a86229fe63d?workflowactionid=1
+Apr 19 17:46:40  [error] admin (::1) out.Hooks UI::exitError error=Accès refusé. pagetitle=Outils d'administration
+Apr 19 17:47:46  [info] admin (::1) op.WorkflowActionsMgr.php&action=addworkflowaction&name=Lecture
+Apr 19 17:48:02  [info] admin (::1) op.WorkflowActionsMgr.php&action=addworkflowaction&name=Rejet
+Apr 19 17:49:50  [info] admin (::1) op.WorkflowActionsMgr.php&action=editworkflowaction&workflowactionid=2
+Apr 19 17:50:56  [info] admin (::1) op.WorkflowStatesMgr.php&action=addworkflowstate&name=Reçu
+Apr 19 17:52:13  [info] admin (::1) op.WorkflowStatesMgr.php&action=editworkflowstate&workflowstateid=3
+Apr 19 17:53:09  [info] admin (::1) op.WorkflowMgr.php&action=addworkflow&name=Reception
+Apr 19 18:01:00  [info] admin (::1) op.RemoveWorkflow?workflowid=1
+Apr 19 18:01:21  [info] admin (::1) op.RemoveWorkflowState.php?workflowstateid=3&formtoken=9fbffc567a5d90d1a6484d6c0a15eb11?workflowstateid=3
+Apr 19 18:01:26  [info] admin (::1) op.RemoveWorkflowState.php?workflowstateid=2&formtoken=9fbffc567a5d90d1a6484d6c0a15eb11?workflowstateid=2
+Apr 19 18:02:16  [info] admin (::1) op.RemoveWorkflowAction.php?workflowactionid=2&formtoken=1f9fa01a1ae73e12619a0a86229fe63d?workflowactionid=2
+Apr 19 18:02:25  [info] admin (::1) op.RemoveWorkflowAction.php?workflowactionid=3&formtoken=1f9fa01a1ae73e12619a0a86229fe63d?workflowactionid=3
+Apr 19 18:08:05  [info] -- (::1) op.Login
+Apr 19 18:09:49  [info] -- (::1) op.Login
+Apr 19 18:10:09  [info] admin (::1) op.Ajax.php?command=deletefolder&id=2&formtoken=4d525ebdb8120554134c9b20636408b1
+Apr 19 18:16:35  [info] admin (::1) op.GroupMgr&action=addgroup&name=Direction Générale
+Apr 19 18:17:59  [info] admin (::1) op.GroupMgr&action=addgroup&name=DSD-KINDIA
+Apr 19 18:19:48  [info] admin (::1) op.GroupMgr&action=addgroup&name=DSD-MAMOU
+Apr 19 18:20:12  [info] admin (::1) op.GroupMgr&action=addgroup&name=DSD-KANKAN
+Apr 19 18:20:31  [info] admin (::1) op.GroupMgr&action=addgroup&name=DSD-SIGUIRI
+Apr 19 18:20:47  [info] admin (::1) op.GroupMgr&action=addgroup&name=DSD-LABE
+Apr 19 18:21:15  [info] admin (::1) op.GroupMgr&action=addgroup&name=DSD-RATOMA
+Apr 19 18:36:00  [error] admin (::1) out.Hooks UI::exitError error=Accès refusé. pagetitle=Outils d'administration
+Apr 19 18:40:24  [info] admin (::1) op.RoleMgr.php&action=addrole&name=Role_archive
+Apr 19 18:55:20  [info] admin (::1) op.RoleMgr.php&action=editrole&roleid=4
+Apr 19 19:02:10  [info] admin (::1) op.AddSubFolder?name=FiLIALE KINDIA&folderid=1
+Apr 19 19:02:25  [info] admin (::1) op.AddSubFolder?name=FiLIALE MAMOU&folderid=1
+Apr 19 19:02:39  [info] admin (::1) op.AddSubFolder?name=FiLIALE KANKAN&folderid=1
+Apr 19 19:02:50  [info] admin (::1) op.AddSubFolder?name=FiLIALE LABE&folderid=1

@@ -924,11 +924,11 @@ background-image: linear-gradient(to bottom, #882222, #111111);;
 		$menuitems['misc']['children']['version_info'] = array('link'=>"../out/out.Info.php", 'label'=>'version_info');
 		}
 
-		if($accessobject->check_view_access(array('Hooks'))) {
+	/* 	if($accessobject->check_view_access(array('Hooks'))) {
 		$menuitems['debug'] = array('link'=>"#", 'label'=>'debug');
 		if ($accessobject->check_view_access('Hooks'))
 		$menuitems['debug']['children']['hooks'] = array('link'=>"../out/out.Hooks.php", 'label'=>'list_hooks');
-		}
+		} */
 
 		/* Check if hook exists because otherwise callHook() will override $menuitems */
 		if($this->hasHook('admintoolsNavigationBar'))
