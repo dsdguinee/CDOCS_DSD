@@ -7,7 +7,7 @@
        - language: default language (name of a subfolder in folder "languages")
        - theme: default style (name of a subfolder in folder "styles")
     -->
-    <display siteName="Courriers DSD-Guinée"  printDisclaimer="true" language="en_GB" theme="bootstrap" previewWidthList="40" previewWidthDetail="100" availablelanguages="" showFullPreview="false" convertToPdf="false" onePageMode="false" previewWidthMenuList="40" previewWidthDropFolderList="100" maxItemsPerPage="0" incItemsPerPage="0">  
+    <display siteName="Courriers DSD-Guinée" printDisclaimer="true" language="fr_FR" theme="bootstrap" previewWidthList="40" previewWidthDetail="100" availablelanguages="en_GB,fr_FR" showFullPreview="false" convertToPdf="false" onePageMode="false" previewWidthMenuList="40" previewWidthDropFolderList="100" maxItemsPerPage="0" incItemsPerPage="0" footNote="">  
     </display>
     <!-- strictFormCheck: Strict form checking. If set to true, then all fields in the form will be checked for a value. If set to false, then (most) comments and keyword fields become optional. Comments are always required when submitting a review or overriding document status.
        - viewOnlineFileTypes: files with one of the following endings can be viewed online (USE ONLY LOWER CASE CHARACTERS)
