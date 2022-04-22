@@ -1,3 +1,9 @@
+<style>
+	.well{
+		width: 100%;
+	}
+</style>
+
 <?php
 //    MyDMS. Document Management System
 //    Copyright (C) 2010 Matteo Lucarelli
