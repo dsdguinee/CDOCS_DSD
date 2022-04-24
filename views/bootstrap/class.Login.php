@@ -1,3 +1,4 @@
+
 <?php
 /**
  * Implementation of Login view
@@ -76,6 +77,16 @@ $(document).ready( function() {
 		ev.preventDefault();
 	});
 */
+$('#login').prev().text('Identifiant');
+$("#pwd").prev().text('Mot de Passe');
+$("#languageselector").prev().text('Langue');
+$(".frm_login legend").text('Connectez-Vous');
+$(".frm_login legend").css('color','#434041')
+$('.form-control').focusout(function() {
+        $('.form-group').removeClass('focus');
+    });
+    $("#login,#pwd").addClass('form-control');
+
 	$('body').on('click', '#guestlogin', function(ev){
 		ev.preventDefault();
 		guestLogin();
@@ -121,12 +132,13 @@ $(document).ready( function() {
 			$this->errorMsg(htmlspecialchars($msg));
 ?>
 <?php $this->contentContainerStart(); ?>
-<form class="form-horizontal frm_login" action="../op/op.Login.php" method="post" name="form1" id="form">
-	
+<form class="form-horizontal frm_login form-horizontal_login" action="../op/op.Login.php" method="post" name="form1" id="form">
+<img alt='DSD-Guinée' src="../styles/deslogo.png" style="height:70px"/>  
+
 <?php
-		echo "<div class=\"text-center\">";
+		// echo "<div class=\"text-center\">";
 		$this->pageNavigation(getMLText("sign_in"));
-		echo "</div>";
+		// echo "</div>";
 		if ($refer) {
 			echo "<input type='hidden' name='referuri' value='".sanitizeString($refer)."'/>";
 		}
@@ -137,9 +149,10 @@ $(document).ready( function() {
 				'type'=>'text',
 				'id'=>'login',
 				'name'=>'login',
-				'placeholder'=>'Votre Nom d\'Utilisateur',
+				// 'placeholder'=>'Votre Nom d\'Utilisateur',
 				'autocomplete'=>'off',
-				'required'=>true
+				'required'=>true,
+			
 			)
 		);
 		$this->formField(
@@ -149,9 +162,10 @@ $(document).ready( function() {
 				'type'=>'password',
 				'id'=>'pwd',
 				'name'=>'pwd',
-				'placeholder'=>'Votre Mot de Pass',
+				
 				'autocomplete'=>'off',
-				'required'=>true
+				'required'=>true,
+				
 			)
 		);
 		if($enable2factauth) {
@@ -170,7 +184,7 @@ $(document).ready( function() {
 		}
 		if($enableLanguageSelector) {
 			$html = "<select id=\"languageselector\" name=\"lang\">";
-			$html .= "<option value=\"\">Choisir une Langue";
+			$html .= "<option value=\"\">-";
 			foreach ($languages as $currLang) {
 				$html .= "<option value=\"".$currLang."\">".getMLText($currLang)."</option>";
 			}

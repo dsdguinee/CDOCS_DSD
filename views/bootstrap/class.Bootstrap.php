@@ -291,7 +291,7 @@ background-image: linear-gradient(to bottom, #882222, #111111);;
 	} /* }}} */
 
 	function globalBanner() { /* {{{ */
-		if ($_SERVER['REQUEST_URI'] != '/CDOCS_DSD/out/out.Login.php'){
+		if (trim($_SERVER['REQUEST_URI']) != '/CDOCS_DSD/out/out.Login.php'){
 			echo "<div class=\"navbar navbar-inverse navbar-fixed-top\">\n";
 			echo " <div class=\"navbar-inner\">\n";
 			echo "  <div class=\"container-fluid\" style=\"background-color: #fb810e;\">\n";
@@ -604,6 +604,7 @@ background-image: linear-gradient(to bottom, #882222, #111111);;
 				echo $pageTitle."\n";
 		} else {
 			echo "<legend>".$pageTitle."</legend>\n";
+			// echo '<h1>dkdkdk</h1>';
 		}
 
 		return;
@@ -916,7 +917,7 @@ background-image: linear-gradient(to bottom, #882222, #111111);;
 		$menuitems['misc']['children']['objectcheck'] = array('link'=>"../out/out.ObjectCheck.php", 'label'=>'objectcheck');
 		if ($accessobject->check_view_access('ExpiredDocuments'))
 		$menuitems['misc']['children']['documents_expired'] = array('link'=>"../out/out.ExpiredDocuments.php", 'label'=>'documents_expired');
-		if ($accessobject->check_view_access('ExtensionMgr'))
+		if ($accessobject->check_view_access('ExtensiofnMgr'))
 		$menuitems['misc']['children']['extension_manager'] = array('link'=>"../out/out.ExtensionMgr.php", 'label'=>'extension_manager');
 		if ($accessobject->check_view_access('ClearCache'))
 		$menuitems['misc']['children']['clear_cache'] = array('link'=>"../out/out.ClearCache.php", 'label'=>'clear_cache');
@@ -1061,14 +1062,24 @@ background-image: linear-gradient(to bottom, #882222, #111111);;
 	} /* }}} */
 
 	function contentContainer($content) { /* {{{ */
-		echo "<div class=\"well\">\n";
+		if (trim($_SERVER['REQUEST_URI']) == '/CDOCS_DSD/out/out.Login.php'){
+		  echo "<div class=\"well well_login\">\n";
+		}else
+		{
+			echo "<div class=\"well\">\n";	
+		}
 		echo $content;
 		echo "</div>\n";
 		return;
 	} /* }}} */
 
 	function contentContainerStart($class='', $id='') { /* {{{ */
-		echo "<div class=\"well".($class ? " ".$class : "")."\"".($id ? " id=\"".$id."\"" : "").">\n";
+		if (trim($_SERVER['REQUEST_URI']) == '/CDOCS_DSD/out/out.Login.php'){
+		   echo "<div class=\"well well_login".($class ? " ".$class : "")."\"".($id ? " id=\"".$id."\"" : "").">\n";
+	   }
+	   else{
+		   echo "<div class=\"well".($class ? " ".$class : "")."\"".($id ? " id=\"".$id."\"" : "").">\n";
+	   }
 		return;
 	} /* }}} */
 
@@ -1080,10 +1091,14 @@ background-image: linear-gradient(to bottom, #882222, #111111);;
 
 	function contentHeading($heading, $noescape=false) { /* {{{ */
 
-		if($noescape)
+		if($noescape){
 			echo "<legend>".$heading."</legend>\n";
-		else
+			
+		}
+		else{
 			echo "<legend>".htmlspecialchars($heading)."</legend>\n";
+			
+		}
 		return;
 	} /* }}} */
 
@@ -1096,9 +1111,15 @@ background-image: linear-gradient(to bottom, #882222, #111111);;
 
 	function formField($title, $value, $params=array()) { /* {{{ */
 		if($title !== null) {
+			if (trim($_SERVER['REQUEST_URI']) == '/CDOCS_DSD/out/out.Login.php'){
+			echo "<div class=\"form-group\">";
+			echo "	<label class=\"form-label\"".(!empty($params['help']) ? " title=\"".$params['help']."\" style=\"cursor: help;\"" : "").">".$title.":</label>";
+		   }
+		   else{
 			echo "<div class=\"control-group\">";
 			echo "	<label class=\"control-label\"".(!empty($params['help']) ? " title=\"".$params['help']."\" style=\"cursor: help;\"" : "").">".$title.":</label>";
 			echo "	<div class=\"controls\">";
+		   }
 		}
 		if(isset($params['field_wrap'][0]))
 			echo $params['field_wrap'][0];
@@ -1157,7 +1178,10 @@ background-image: linear-gradient(to bottom, #882222, #111111);;
 			echo $params['field_wrap'][1];
 		if($title !== null) {
 			echo "</div>";
-			echo "</div>";
+			if (trim($_SERVER['REQUEST_URI']) != '/CDOCS_DSD/out/out.Login.php'){
+				echo "</div>";
+			}
+			
 		}
 		return;
 	} /* }}} */

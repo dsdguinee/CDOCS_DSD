@@ -448,5 +448,169 @@ ul.qq-upload-list li span {
 	width: 453px;
 	margin: auto;
 	
+	
 }
-
+.well_login
+{
+	width: 453px;
+	background-color: transparent!important;
+	background: rgba(255, 255, 255, 0.8);
+	box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.15);
+	margin: auto;
+	text-align: center;
+	color: rgba(0, 0, 0, 0.5);
+	position: absolute;
+	left: 0;
+	right: 0;
+	top: 0;
+	bottom: 0;
+	height: 550px;
+	overflow: hidden;
+}
+.frm_login
+{
+	height: 100%;
+}
+.form-horizontal_login .control-label
+{
+  float: none!important;
+  text-align:unset!important;
+  width: auto !important;
+}
+.well_login form h1 {
+	font-size: 19px;
+	margin: 25px 0 15px;
+	display: inline-block;
+	width: 100%;
+	font-weight: 200;
+	color: #FE5F01;
+	font-family: 'Vibur', cursive;
+  }
+  .well_login .frm_login
+  {
+	padding: 15px;
+	max-width: 385px;
+	margin: auto;
+  }
+.well_login form .form-group{
+	padding: 25px;
+	max-width: 320px;
+	margin: auto;
+  }
+.well_login form .form-group:after {
+	content: '';
+	position: absolute;
+	height: 2px;
+	background: #fff;
+	width: 0px;
+	left: 0;
+	right: 0;
+	margin: auto;
+	bottom: -2px;
+	opacity: 0;
+	transition: 0.3s;
+  }
+  .well_login form .form-group .form-control,#languageselector {
+	/*border: none!important;*/
+	height: 35px;
+	position: relative;
+	z-index: 2;
+	padding: 5px;
+	background: none;
+	color: #FE5F01;
+	width: 100%;
+  }
+  #languageselector
+  {
+	height: 45px;
+	padding-top: 12px;
+	width: 334px;
+  }
+  .well_login form .form-group .form-control:focus,.well_login form .form-group .form-control:active {
+	box-shadow: none;
+	outline: none;
+  }
+.well_login form .form-group .form-label {
+	font-weight: 300;
+	color: #ff8801;
+	font-size: 14px;
+	min-height: 17px;
+	text-align: left;
+	position: absolute;
+	left: 93px;
+	right: 0;
+	transition: 0.3s;
+	z-index: 1;
+  }
+  .well_login form .form-group.focus:after {
+	opacity: 1;
+	width: 100%;
+	background: #FE5F01;
+  }
+  .well_login form .form-group.focus .form-label, .well_login form .form-group.filled .form-label {
+	top: -7px;
+	font-size: 10px;
+	color: #FE5F01;
+  }
+  ripple {
+	width: 0;
+	height: 0;
+	border-radius: 50%;
+	background: rgba(221, 74, 58, 0.5);
+	transform: scale(0, 0);
+	position: absolute;
+	opacity: 1;
+  }
+  .well_login form .form-group {
+	border-color: #fff;
+  }
+  .rippleEffect {
+	-webkit-animation: rippleDrop 0.3s ease-in;
+	animation: rippleDrop 0.3s ease-in;
+  }
+  @-webkit-keyframes rippleDrop {
+	to {
+	  transform: scale(2.5);
+	  opacity: 0;
+	}
+  }
+  @keyframes rippleDrop {
+	to {
+	  transform: scale(2.5);
+	  opacity: 0;
+	}
+  }
+  #login-error,#pwd-error
+  {
+	text-align: left;
+    margin-top: 7px;
+    color: #c41212;
+    font-family: fangsong;
+    font-size: 16px;
+  }
+.frm_login .controls .btn{
+	border: 1px solid #d44f01;
+	padding: 10px;
+	border-radius: 20px;
+    width: 250px;
+	margin-top: 15px;
+	background: #FE5F01;
+	font-size: 16px;
+	font-weight: 400;
+	cursor: pointer;
+	color: #fff;
+	position: relative;
+	overflow: hidden;
+}
+.frm_login .controls
+{
+	margin: auto;
+	margin-bottom: 10px;
+}
+.login
+{
+	background-image:url(../dsdimage.png);
+	background-repeat: no-repeat;
+    background-attachment: fixed;
+	background-position: center;
+}
