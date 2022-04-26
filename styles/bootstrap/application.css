@@ -1,5 +1,6 @@
 body { /* Add top padding for full-width layout */
 	padding-top: 60px;
+	font-family: Poppins, sans-serif;
 }
 img.mimeicon {
   -moz-border-bottom-colors: none;
@@ -452,7 +453,7 @@ ul.qq-upload-list li span {
 }
 .well_login
 {
-	width: 453px;
+	width: 395px;
 	background-color: transparent!important;
 	background: rgba(255, 255, 255, 0.8);
 	box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.15);
@@ -493,7 +494,7 @@ ul.qq-upload-list li span {
 	margin: auto;
   }
 .well_login form .form-group{
-	padding: 25px;
+	padding: 10px 0;
 	max-width: 320px;
 	margin: auto;
   }
@@ -512,33 +513,36 @@ ul.qq-upload-list li span {
   }
   .well_login form .form-group .form-control,#languageselector {
 	/*border: none!important;*/
-	height: 35px;
+	height: 32px;
 	position: relative;
 	z-index: 2;
-	padding: 5px;
+	padding: 4px 10px;
+	font-weight: 400;
 	background: none;
-	color: #FE5F01;
+	color: #000;
 	width: 100%;
   }
   #languageselector
   {
 	height: 45px;
-	padding-top: 12px;
-	width: 334px;
+	padding: 4px 10px;
+	/* width: 100%; */
+	/* padding-top: 12px; */
+	width: 340px;
   }
   .well_login form .form-group .form-control:focus,.well_login form .form-group .form-control:active {
 	box-shadow: none;
 	outline: none;
   }
 .well_login form .form-group .form-label {
-	font-weight: 300;
-	color: #ff8801;
-	font-size: 14px;
+	font-weight: 400;
+	color: #000;
+	font-size: 13px;
 	min-height: 17px;
 	text-align: left;
-	position: absolute;
+	/* position: absolute;
 	left: 93px;
-	right: 0;
+	right: 0; */
 	transition: 0.3s;
 	z-index: 1;
   }
@@ -585,18 +589,19 @@ ul.qq-upload-list li span {
 	text-align: left;
     margin-top: 7px;
     color: #c41212;
-    font-family: fangsong;
+    font-family: Poppins, sans-serif;
     font-size: 16px;
   }
 .frm_login .controls .btn{
-	border: 1px solid #d44f01;
+	/* border: 1px solid #d44f01; */
+	font-family: Poppins, sans-serif;
 	padding: 10px;
 	border-radius: 20px;
-    width: 250px;
+    width: 80%;
 	margin-top: 15px;
 	background: #FE5F01;
-	font-size: 16px;
-	font-weight: 400;
+	font-size: 14px;
+	font-weight: 500;
 	cursor: pointer;
 	color: #fff;
 	position: relative;
@@ -607,10 +612,18 @@ ul.qq-upload-list li span {
 	margin: auto;
 	margin-bottom: 10px;
 }
-.login
+/* .login
 {
 	background-image:url(../dsdimage.png);
 	background-repeat: no-repeat;
     background-attachment: fixed;
 	background-position: center;
+} */
+
+.login_title {
+	margin: 1em auto;
+	font-size: 1rem;
+	font-weight: 600;
+	padding-bottom: 1em;
+	/* border-bottom: none; */
 }

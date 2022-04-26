@@ -3,3 +3,17 @@ Apr 25 01:30:54  [info] -- (::1) op.Login
 Apr 25 01:31:27  [info] -- (::1) op.Login
 Apr 25 01:32:43  [info] admin (::1) op.Settings.php&action=savesettings
 Apr 25 01:47:18  [info] -- (::1) op.Login
+Apr 25 11:48:05  [info] -- (::1) op.Login
+Apr 25 12:33:33  [info] -- (::1) op.Login
+Apr 25 12:34:18  [info] admin (::1) op.UsrMgr.php&action=edituser&userid=4
+Apr 25 12:36:47  [info] admin (::1) op.UsrMgr.php&action=edituser&userid=4
+Apr 25 12:37:01  [info] admin (::1) op.UsrMgr.php&action=sendlogindata&userid=4
+Apr 25 13:10:36  [info] -- (::1) op.Login
+Apr 25 13:11:44  [info] admin (::1) op.UsrMgr.php&action=sendlogindata&userid=4
+Apr 25 13:16:38  [info] admin (::1) op.UsrMgr.php&action=sendlogindata&userid=4
+Apr 25 13:18:51  [info] admin (::1) op.UsrMgr.php&action=sendlogindata&userid=4
+Apr 25 13:20:32  [info] admin (::1) op.UsrMgr.php&action=sendlogindata&userid=4
+Apr 25 13:27:04  [info] admin (::1) op.UsrMgr.php&action=sendlogindata&userid=4
+Apr 25 13:28:45  [info] admin (::1) op.UsrMgr.php&action=edituser&userid=4
+Apr 25 13:29:01  [info] admin (::1) op.UsrMgr.php&action=sendlogindata&userid=4
+Apr 25 13:31:35  [info] -- (::1) op.Login

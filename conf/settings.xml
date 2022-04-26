@@ -104,7 +104,7 @@
        - smtpPort: SMTP Server port
        - smtpSendFrom: Send from
     -->    
-    <smtp smtpServer="localhost" smtpPort="25" smtpSendFrom="seeddms@localhost" smtpUser="" smtpPassword=""/>    
+    <smtp smtpServer="smtp.gmail.com" smtpPort="587" smtpSendFrom="krouboy@gmail.com" smtpUser="krouboy@gmail.com" smtpPassword="boubasid2015"/>    
   </system>
  
   

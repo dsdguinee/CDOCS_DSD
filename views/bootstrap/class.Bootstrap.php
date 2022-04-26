@@ -105,6 +105,14 @@ class SeedDMS_Bootstrap_Style extends SeedDMS_View_Common {
 		echo '<link href="../styles/'.$this->theme.'/select2/css/select2-bootstrap.css" rel="stylesheet">'."\n";
 		echo '<link href="../styles/'.$this->theme.'/jqtree/jqtree.css" rel="stylesheet">'."\n";
 		echo '<link href="../styles/'.$this->theme.'/application.css" rel="stylesheet">'."\n";
+		echo '<link rel="preconnect" href="https://fonts.googleapis.com">'."\n";
+		echo '<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>'."\n";
+		echo '<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">'."\n";
+
+		
+
+
+
 		if($this->extraheader['css'])
 			echo $this->extraheader['css'];
 		if(method_exists($this, 'css'))

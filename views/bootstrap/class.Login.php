@@ -80,8 +80,10 @@ $(document).ready( function() {
 $('#login').prev().text('Identifiant');
 $("#pwd").prev().text('Mot de Passe');
 $("#languageselector").prev().text('Langue');
-$(".frm_login legend").text('Connectez-Vous');
-$(".frm_login legend").css('color','#434041')
+$(".frm_login legend").text('Connectez-vous');
+$(".frm_login legend").addClass('login_title');
+$(".frm_login legend").css('color','#434041');
+
 $('.form-control').focusout(function() {
         $('.form-group').removeClass('focus');
     });
@@ -133,7 +135,7 @@ $('.form-control').focusout(function() {
 ?>
 <?php $this->contentContainerStart(); ?>
 <form class="form-horizontal frm_login form-horizontal_login" action="../op/op.Login.php" method="post" name="form1" id="form">
-<img alt='DSD-Guinée' src="../styles/deslogo.png" style="height:70px"/>  
+<img alt='DSD-Guinée' src="../styles/deslogo.png" style="height:50px"/>  
 
 <?php
 		// echo "<div class=\"text-center\">";
